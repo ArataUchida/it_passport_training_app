@@ -36,7 +36,7 @@ class Quiz {
 
 class Options {
   final String value;
-  //{"key": "ア", "value": "企業内に蓄積された大量のデータを分析して，事業戦略などに有効活用する"},
+
   Options({required this.value});
 
   factory Options.fromJson(String option) {
@@ -58,7 +58,6 @@ class Choices {
 class AnswerMemo {
   final String key;
   final String kaisetu;
-  // {"key": "ア", "kaisetu": "データマイニングに関する記述です。"},
 
   AnswerMemo({required this.key, required this.kaisetu});
 
@@ -69,17 +68,10 @@ class AnswerMemo {
 
 class AnswerDescription {
   final String summary;
-  //final List<AnswerMemo> answers;
 
   AnswerDescription({required this.summary});
 
   factory AnswerDescription.fromJson(String explanation) {
-    return AnswerDescription(
-      summary: explanation,
-      //answers:
-      //    (json['answer'] as List<Map<String, dynamic>>)
-      //        .map((e) => AnswerMemo.fromJson(e))
-      //        .toList(),
-    );
+    return AnswerDescription(summary: explanation);
   }
 }

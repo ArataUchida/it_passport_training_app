@@ -27,24 +27,7 @@ class DescriptionWidget extends StatelessWidget {
                 SizedBox(height: 10),
                 Text('解答メモ', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                 SizedBox(height: 10),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    //for (final (index, answer) in description.answers.indexed)
-                    //  Column(
-                    //    children: [
-                    //      Row(
-                    //        children: [
-                    //          Text('問${index + 1}'),
-                    //          SizedBox(width: 10),
-                    //          Flexible(child: Text(answer.kaisetu)),
-                    //        ],
-                    //      ),
-                    //      Divider(),
-                    //    ],
-                    //  ),
-                  ],
-                ),
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: []),
               ],
             ),
           ),

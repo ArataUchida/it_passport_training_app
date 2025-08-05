@@ -12,7 +12,6 @@ class AnswerHistory {
   }
 }
 
-//
 class VersionHistory {
   final int version;
   final List<AnswerHistory> history;

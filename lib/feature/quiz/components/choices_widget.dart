@@ -19,7 +19,7 @@ class ChoicesWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(8),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, // 左揃え
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           for (final choiceQuestion in choiceQuestions)

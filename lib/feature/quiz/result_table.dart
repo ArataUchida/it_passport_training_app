@@ -130,7 +130,7 @@ Future<void> saveAnswer(int no, String answer, String correct, int currentVersio
   final prefs = await SharedPreferences.getInstance();
 
   String? data = prefs.getString('history');
-  print(data);
+
   final List<VersionHistory> fullHistory =
       data != null
           ? (jsonDecode(data) as List).map((e) => VersionHistory.fromJson(e)).toList()
